@@ -3,15 +3,26 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+                margin: 0;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-image: linear-gradient(white,gray);
+            }
             .all{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%);
+                
             }
             img{
-                width:250px;
+                width:200px;
                 height:auto;
                 border: 10px ;
                 border-color: black;
@@ -31,14 +42,19 @@
                 display:flex;
                 flex-direction:row;
                 justify-content: space-around;
+                padding-top: 50px;
             }
             .about_text{
+                width: 25vw;
+            }
+            .edu{
                 width: 25vw;
             }
             .bio{
                 display:flex;
                 flex-direction: row;
                 width: fit-content  ;
+                padding-left: 40px;
             }
             .box{
                 display:flex;
@@ -47,8 +63,27 @@
             .contact{
                 padding-left: 0px;
             }
+            @media only screen and (max-width: 1240px) {
+                section.about{
+                display:initial;
+                
+            }
+            .about_text{
+                width: 60vw;
+            }
+            .top{
+                padding-top: 250px;
+            }
+            .box{
+                display:initial;   
+            }
+            .top_text{
+                padding-left: 30px;
+            }
             .edu{
-                width: 25vw; 
+                width: 60vw;
+            }
+                
             }
         </style>
     </head>
@@ -71,13 +106,13 @@
                 </div>
                 <div class="bio">
                     <ul style="list-style-type: none" class="contact">
-                        <li><br><br></li>
+                        <li><br></li>
                         <li>Email</li>
                         <li>Phone</li>
                         <li>Address</li>
                     </ul>
                     <ul style="list-style-type: none">
-                        <li><br><br></li>
+                        <li><br></li>
                         <li>Einstein@xmail.com</li>
                         <li>+852 1000 1000</li>
                         <li>191 Woosung Street, Jordan, Kowloon, Hong Kong</li>
@@ -87,7 +122,7 @@
             <section class="box">
                 <div class="edu">
                     <ul style="list-style-type: none">
-                        <li><h2>Education</h2></li>
+                        <li><h1>Education</h1></li>
                         <li>Federal polytechnic school in Zurich (Federal teaching diploma, 1900)</li>
                         <li>University of Zurich (PhD, 1905)</li>
                     </ul>            
@@ -95,7 +130,7 @@
                 </div>
                 <div class="Awards">                  
                     <ul style="list-style-type: none">
-                        <li><h2>Awards</h2></li>
+                        <li><h1>Awards</h1></li>
                         <li>Barnard Medal(1920)</li>
                         <li>Nobel Prize in Physics (1921)</li>
                         <li>Matteucci Medal (1921)</li>
@@ -107,7 +142,7 @@
             </section>
             <div class="work">
                 <ul style="list-style-type: none">
-                    <li><h2>My work</h2></li>
+                    <li><h1>My work</h1></li>
                     <li><a href="https://en.wikipedia.org/wiki/General_relativity">General relativity</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Special_relativity">Special relativity</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/Photoelectric_effect">Photoelectric effect</a></li>
