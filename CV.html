@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            section{
+            .all{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 margin-right: -50%;
-                transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%);
+            }
+            img{
+                width:250px;
+                height:auto;
+                border: 10px ;
+                border-color: black;
+                border-style: solid;
+            }
+            .top{
+             display:flex;
+             flex-direction:row;
+             justify-content: space-around;
+            }
+            .top_text{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+            }
+            section.about{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-around;
+            }
+            .about_text{
+                width: 25vw;
+            }
+            .bio{
+                display:flex;
+                flex-direction: row;
+                width: fit-content  ;
+            }
+            .box{
+                display:flex;
+                flex-direction:row;
+            }
+            .contact{
+                padding-left: 0px;
+            }
+            .edu{
+                width: 25vw; 
             }
         </style>
     </head>
     <body> 
-        <section>
+        <section class="all">
             <header class="top">
-                <img src="https://parade.com/wp-content/uploads/2021/08/albert-einstein-quotes.jpg" alt="Albert Einstein" />
-                <h1>Albert Einstein</h1>
-                <p> Theoretical Physicist and Philosopher</p>
+                <img src="https://parade.com/wp-content/uploads/2021/08/albert-einstein-quotes.jpg" alt="Albert Einstein"  />
+                <div class="top_text">
+                    <h1>Albert Einstein</h1>
+                    <p> Theoretical Physicist and Philosopher</p>
+                </div>
             </header>
-            <article>
-                <div class="about">
-                <h1>About me</h1>
-                <p>Hello! I am Albert Einstein. I am passionate about the universe and the quantum world. 
-                My work have influenced virtually all modern physicists.</p>
+            <section class="about">
+                <div class="about_text">
+                <ul style="list-style-type: none">   
+                    <li><h1>About me</h1></li>
+                    <li><p>Hello! I am Albert Einstein. I am passionate about the universe and the quantum world. 
+                My work have influenced virtually all modern physicists.</p></li>
+                </ul>
                 </div>
                 <div class="bio">
-                    <ul style="list-style-type: none">
+                    <ul style="list-style-type: none" class="contact">
                         <li>Email</li>
                         <li>Phone</li>
                         <li>Address</li>
@@ -36,27 +81,36 @@
                         <li>191 Woosung Street, Jordan, Kowloon, Hong Kong</li>
                     </ul>
                 </div>
-            </article>
-            <div class="edu">
-                <h2>Education</h2>
-                <ul style="list-style-type: none">
-                    <li>Federal polytechnic school in Zurich (Federal teaching diploma, 1900)</li>
-                    <li>University of Zurich (PhD, 1905)</li>
-                </ul>            
-            </div>
-            </div>
-            <div class="Awards">
-                <h2>Awards</h2>
-                <ul style="list-style-type: none">
-                    <li>Barnard Medal(1920)</li>
-                    <li>Nobel Prize in Physics (1921)</li>
-                    <li>Matteucci Medal (1921)</li>
-                    <li>Copley Medal (1925)</li>
-                    <li>Gold Medal of the Royal Astronomical Society(1926)</li>
-                    <li>Max Planck Medal (1929)</li>
-                </ul>
-            </div>
+            </section>
+            <section class="box">
+                <div class="edu">
+                    <ul style="list-style-type: none">
+                        <li><h2>Education</h2></li>
+                        <li>Federal polytechnic school in Zurich (Federal teaching diploma, 1900)</li>
+                        <li>University of Zurich (PhD, 1905)</li>
+                    </ul>            
+                </div>
+                </div>
+                <div class="Awards">                  
+                    <ul style="list-style-type: none">
+                        <li><h2>Awards</h2></li>
+                        <li>Barnard Medal(1920)</li>
+                        <li>Nobel Prize in Physics (1921)</li>
+                        <li>Matteucci Medal (1921)</li>
+                        <li>Copley Medal (1925)</li>
+                        <li>Gold Medal of the Royal Astronomical Society(1926)</li>
+                        <li>Max Planck Medal (1929)</li>
+                    </ul>                    
+                </div>
+            </section>
             <div class="work">
+                <ul style="list-style-type: none">
+                    <li>My work</li>
+                    <li>General relativity</li>
+                    <li>Special relativity</li>
+                    <li>Photoelectric effect</li>
+                    <li>Theory of Brownian motion</li>
+                </ul>
             </div>
         </section>       
     </body>
