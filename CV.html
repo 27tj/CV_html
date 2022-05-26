@@ -2,54 +2,62 @@
 <html>
     <head>
         <style>
-
+            section{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
         </style>
     </head>
-    <body>      
-        <header class="top">
-            <img src="https://parade.com/wp-content/uploads/2021/08/albert-einstein-quotes.jpg" alt="Albert Einstein" />
-            <h1>Albert Einstein</h1>
-            <p> Theoretical Physicist and Philosopher</p>
-        </header>
-        <article>
-            <div class="about">
-            <h1>About me</h1>
-            <p>Hello! I am Albert Einstein. I am passionate about the universe and the quantum world. 
-            My work have influenced virtually all modern physicists.</p>
-            </div>
-            <div class="bio">
+    <body> 
+        <section>
+            <header class="top">
+                <img src="https://parade.com/wp-content/uploads/2021/08/albert-einstein-quotes.jpg" alt="Albert Einstein" />
+                <h1>Albert Einstein</h1>
+                <p> Theoretical Physicist and Philosopher</p>
+            </header>
+            <article>
+                <div class="about">
+                <h1>About me</h1>
+                <p>Hello! I am Albert Einstein. I am passionate about the universe and the quantum world. 
+                My work have influenced virtually all modern physicists.</p>
+                </div>
+                <div class="bio">
+                    <ul style="list-style-type: none">
+                        <li>Email</li>
+                        <li>Phone</li>
+                        <li>Address</li>
+                    </ul>
+                    <ul style="list-style-type: none">
+                        <li>Einstein@xmail.com</li>
+                        <li>+852 1000 1000</li>
+                        <li>191 Woosung Street, Jordan, Kowloon, Hong Kong</li>
+                    </ul>
+                </div>
+            </article>
+            <div class="edu">
+                <h2>Education</h2>
                 <ul style="list-style-type: none">
-                    <li>Email</li>
-                    <li>Phone</li>
-                    <li>Address</li>
-                </ul>
+                    <li>Federal polytechnic school in Zurich (Federal teaching diploma, 1900)</li>
+                    <li>University of Zurich (PhD, 1905)</li>
+                </ul>            
+            </div>
+            </div>
+            <div class="Awards">
+                <h2>Awards</h2>
                 <ul style="list-style-type: none">
-                    <li>Einstein@xmail.com</li>
-                    <li>+852 1000 1000</li>
-                    <li>191 Woosung Street, Jordan, Kowloon, Hong Kong</li>
+                    <li>Barnard Medal(1920)</li>
+                    <li>Nobel Prize in Physics (1921)</li>
+                    <li>Matteucci Medal (1921)</li>
+                    <li>Copley Medal (1925)</li>
+                    <li>Gold Medal of the Royal Astronomical Society(1926)</li>
+                    <li>Max Planck Medal (1929)</li>
                 </ul>
             </div>
-        </article>
-        <div class="edu">
-            <h2>Education</h2>
-            <ul style="list-style-type: none">
-                <li>Federal polytechnic school in Zurich (Federal teaching diploma, 1900)</li>
-                <li>University of Zurich (PhD, 1905)</li>
-            </ul>            
-        </div>
-        </div>
-        <div class="Awards">
-            <h2>Awards</h2>
-            <ul style="list-style-type: none">
-                <li>Barnard Medal(1920)</li>
-                <li>Nobel Prize in Physics (1921)</li>
-                <li>Matteucci Medal (1921)</li>
-                <li>Copley Medal (1925)</li>
-                <li>Gold Medal of the Royal Astronomical Society(1926)</li>
-                <li>Max Planck Medal (1929)</li>
-            </ul>
-        </div>
-        <div class="work">
-        </div>       
+            <div class="work">
+            </div>
+        </section>       
     </body>
 </html>
