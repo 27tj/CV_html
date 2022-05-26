@@ -27,6 +27,9 @@ img{
     margin-left: 40px;
 
 }
+.NAME{
+    font-size: larger;
+}
 .top{
  display:flex;
  flex-direction:row;
