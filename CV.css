@@ -1,0 +1,47 @@
+.all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+img{
+    width:250px;
+    height:auto;
+    border: 10px ;
+    border-color: black;
+    border-style: solid;
+}
+.top{
+ display:flex;
+ flex-direction:row;
+ justify-content: space-around;
+}
+.top_text{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+section.about{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.about_text{
+    width: 25vw;
+}
+.bio{
+    display:flex;
+    flex-direction: row;
+    width: fit-content  ;
+}
+.box{
+    display:flex;
+    flex-direction:row;
+}
+.contact{
+    padding-left: 0px;
+}
+.edu{
+    width: 25vw; 
+}
